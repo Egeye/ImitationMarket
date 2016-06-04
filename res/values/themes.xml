@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarTabStyle">@style/MyActionBar</item>
+        <item name="android:actionBarStyle">@style/MyActionBar2</item>
+        
+        <item name="searchViewCloseIcon">@drawable/ic_action_clear</item>
+        <item name="searchViewSearchIcon">@drawable/ic_action_search</item>
+        <item name="searchViewTextField">@drawable/action_bar_blue_bg</item>
+        
+        <!-- Support library compatibility -->
+        <item name="actionBarTabStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar2</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" 
+           parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+        
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/actionbar_tab_indicator</item>
+    </style>
+    
+
+    <style name="MyActionBar2"
+           parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/action_bar_blue_bg</item>
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/action_bar_blue_bg</item>
+    </style>
+   
+    
+</resources>
